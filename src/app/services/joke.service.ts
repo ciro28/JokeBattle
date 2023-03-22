@@ -59,7 +59,7 @@ export class JokeService {
   constructor() {}
 
   votoPositivo(battuta: Battuta) {
-    if (battuta.votoNegativo) {
+    /*if (battuta.votoNegativo) {
       battuta.nVotoN ? (battuta.nVotoN--) : (battuta.nVotoN = 1);
       battuta.votoNegativo = false;
     }
@@ -69,11 +69,12 @@ export class JokeService {
       battuta.nVotoP ? battuta.nVotoP++ : (battuta.nVotoP = 1);
     } else {
       battuta.nVotoP ? battuta.nVotoP-- : (battuta.nVotoP = 1);
-    }
+    }*/
+    battuta.nVotoP ? battuta.nVotoP++ : (battuta.nVotoP = 1);
   }
 
   votoNegativo(battuta: Battuta) {
-    if (battuta.votoPositivo) {
+    /*if (battuta.votoPositivo) {
       battuta.nVotoP ? (battuta.nVotoP--) : (battuta.nVotoP = 1);
       battuta.votoPositivo = false;
     }
@@ -83,6 +84,7 @@ export class JokeService {
       battuta.nVotoN ? battuta.nVotoN++ : (battuta.nVotoN = 1);
     } else {
       battuta.nVotoN ? battuta.nVotoN-- : (battuta.nVotoN = 1);
-    }
+    }*/
+    battuta.nVotoN ? battuta.nVotoN++ : (battuta.nVotoN = 1);
   }
 }
