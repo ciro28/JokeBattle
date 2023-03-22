@@ -1,0 +1,14 @@
+
+<h3> {{ giocoTerminato ? 'Classifica delle Battute!' : 'Battute più votate!' }}</h3>
+
+<div *ngFor="let battuta of jokeService.battute">
+    <div class="card"  *ngIf="battuta.nVotoP">
+        {{ battuta.text }}
+
+        <p>
+            voti positivi {{ battuta.nVotoP }}
+            voti negativi {{ battuta.nVotoN ? battuta.nVotoN : 0}}
+
+        </p>
+    </div>
+</div>

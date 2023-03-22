@@ -1,0 +1,7 @@
+
+<div class = "body">
+    <app-joke-battle (resBattute) = "getBattute($event)" (resGiocoTerminato) = "setGiocoTerminato($event)"></app-joke-battle>
+    <app-joke-card [battute] = "battute" [giocoTerminato] = "giocoTerminato"></app-joke-card>
+    <app-leaderboard [giocoTerminato] = "giocoTerminato"></app-leaderboard>
+</div>
+<router-outlet></router-outlet>

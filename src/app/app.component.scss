@@ -1,0 +1,11 @@
+.body {
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 500px) {
+    .body {
+        width: 100%;
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,13 @@
+<p *ngIf = "(battuteFinite || giocoTerminato); else secondi;">
+    {{ battuteFinite ? 'Battute finite!' : 'GIOCO TERMINATO!' }}
+</p>
+<ng-template #secondi>
+    <p>
+        Secondi mancanti alle prossime due battute 
+        {{ timeout / 1000 }}
+    </p>
+
+    <p>
+        <button (click)="termina()">Termina</button>
+    </p>
+</ng-template>

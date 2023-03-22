@@ -1,0 +1,13 @@
+
+<div class="card" *ngFor="let battuta of battute">
+    {{ battuta.text }}
+
+    <p *ngIf = "!giocoTerminato">
+        <button [style] = "'visibility: ' + (!battuta.votoPositivo ? '' : 'hidden') +';'"
+            (click)="jokeService.votoPositivo(battuta)">voto
+            positivo</button>
+        <button [style] = "'visibility: ' + (!battuta.votoNegativo ? '' : 'hidden') +';'"
+            (click)="jokeService.votoNegativo(battuta)">voto
+            negativo</button>
+    </p>
+</div>
